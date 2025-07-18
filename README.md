@@ -63,3 +63,34 @@ Alle funktioner er tilpasset fast pin-layout på breakout board.
 2. Start et nyt projekt
 3. Klik på **Extensions**
 4. Søg efter:
+
+
+
+---
+
+## 📦 Blokoversigt
+
+- `Motor A fremad med hastighed`
+- `Motor A baglæns med hastighed`
+- `Stop motor A`
+- `Motor B fremad med hastighed`
+- `Motor B baglæns med hastighed`
+- `Stop motor B`
+- `Drej servo til grader`
+- `Mål afstand i cm`
+
+---
+
+## 🧪 Eksempel på brug
+
+```ts
+L298ServoUltra.motorAFrem(800)
+L298ServoUltra.motorBFrem(800)
+basic.pause(1000)
+L298ServoUltra.stopMotorA()
+L298ServoUltra.stopMotorB()
+
+
+
+
+
