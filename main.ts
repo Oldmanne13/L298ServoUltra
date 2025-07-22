@@ -79,6 +79,9 @@ namespace L298ServoUltra {
      */
     //% block="Mål afstand i cm"
     export function målAfstand(): number {
+        basic.clearScreen()
+        led.enable(false)
+        
         pins.setPull(DigitalPin.P16, PinPullMode.PullNone)
         pins.digitalWritePin(DigitalPin.P16, 0)
         control.waitMicros(2)
